@@ -1,10 +1,26 @@
 import { useState } from "react"; 
+import { useNavigate } from "react-router-dom";
+import postLogin from "../api/post-login";
 
 function LoginForm() {
+    const navigate = useNavigate();
     const [credentials, setCredentials] = useState({
          username: "",
          password: "",
          });
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (credentials.username && credentials.password) {
+            postLogin(
+                credentials.username,
+                credentials.password
+            ).then((response) => {
+                window.localStorage.setItem("token", response.token);
+                navigate("/");
+            });
+        }
+    };            
 
     const handleChange = (event) => {
         const { id, value } = event.target; 
@@ -35,7 +51,9 @@ function LoginForm() {
                     onChange={handleChange}
                 />
         </div>
-        <button type="submit">Login</button>
+        <button type="submit" onClick={handleSubmit}>
+            Login
+        </button>
         </form>
     );
 }
