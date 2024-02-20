@@ -1,13 +1,13 @@
 # crowdfunding_front_end
 Ida Eriksson 
 
-- [ ] Be separated into two distinct projects: an API built using the Django Rest
+- [X] Be separated into two distinct projects: an API built using the Django Rest
 Framework and a website built using React.
-- [ ] Have a cool name, bonus points if it includes a pun and/or missing vowels. See
+- [X] Have a cool name, bonus points if it includes a pun and/or missing vowels. See
 https://namelix.com/ for inspiration.
 (Bonus Points are meaningless)
-- [ ] Have a clear target audience.
-- [ ] Have user accounts. A user should have at least the following attributes:
+- [X] Have a clear target audience.
+- [X] Have user accounts. A user should have at least the following attributes:
 - [ ] Username
 - [ ] Email address
 - [ ] Password

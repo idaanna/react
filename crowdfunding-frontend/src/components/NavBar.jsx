@@ -9,6 +9,8 @@ function NavBar () {
             </nav>
             <Outlet />
         </div>
+
+        // put header here if you want one
     );
 }
 
