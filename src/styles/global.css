@@ -1,0 +1,74 @@
+/* font sizes and colours */
+
+html {
+    font-family: "Atkinson Hyperlegible", sans-serif;
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  
+  main {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: calc(2 * var(--base-font-size));
+  }
+  
+  svg {
+    display: block;
+    margin: 0 auto;
+    fill: currentColor;
+    max-width: 100%;
+  }
+  
+  .heading,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Roboto Serif Variable", sans-serif;
+  }
+  
+  h1 {
+    margin-top: 30px;
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 100%;
+  }
+  p {
+    line-height: 145%;
+  }
+  
+  a {
+    color: currentColor;
+    position: relative;
+    padding: 4px;
+    transition: all 150ms linear;
+    font-weight: 600;
+  
+    /* this might break your code */
+    /* &::after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: "";
+      height: 100%;
+      width: 100%;
+      background-color: var(--text-color);
+      transform-origin: right;
+      transition: all 100ms linear;
+      transform: scalex(0);
+      z-index: -1;
+    }
+    &:hover,
+    &:focus {
+      color: var(--bg-color);
+      &::after {
+        transform: none;
+      }
+    }*/
+
+  } 
+
+
+
