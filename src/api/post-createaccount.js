@@ -1,5 +1,5 @@
 async function postCreateAccount(username, password) {
-    const url = `${import.meta.env.VITE_API_URL}/createaccount/`;
+    const url = `${import.meta.env.VITE_API_URL}/users/`;
     const response = await fetch(url, {
         method: "POST", 
         headers: {

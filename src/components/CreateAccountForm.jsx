@@ -33,7 +33,7 @@ function CreateAccountForm() {
     };
 
     return (
-        <form>
+        <form onSubmit={handleSubmit}>
             <div>
                 <label htmlFor="username"> Create Username: </label>
                 <input 
