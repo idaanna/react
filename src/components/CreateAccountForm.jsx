@@ -9,6 +9,7 @@ function CreateAccountForm() {
     const [credentials, setCredentials] = useState({
         username: "",
         password: "",
+        email: "",
         });
 
     const handleChange = (event) => {
@@ -21,10 +22,12 @@ function CreateAccountForm() {
 
      const handleSubmit = (event) => {
          event.preventDefault();
-         if (credentials.username && credentials.password) {
+         if (credentials.username && credentials.password && credentials.email) {
             postCreateAccount(
+                credentials.email,
                 credentials.username,
-                credentials.password
+                credentials.password,
+                
             ).then((response) => {
                 console.log(response);
                 navigate("/");
@@ -33,7 +36,17 @@ function CreateAccountForm() {
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form >
+            <div>
+                <label htmlFor="email"> Insert email address: </label>
+                <input 
+                    type="text"
+                    id="email"
+                    placeholder="Insert email adress"
+                    onChange={handleChange}
+                />
+            </div>
+
             <div>
                 <label htmlFor="username"> Create Username: </label>
                 <input 
