@@ -10,6 +10,7 @@ import ProjectPage from './pages/ProjectPage.jsx';
 import LoginPage from "./pages/LoginPage.jsx";
 import CreateAccountPage from './pages/CreateAccountPage.jsx';
 import CreateProjectPage from './pages/CreateProjectPage.jsx';
+import CreatePledgePage from './pages/CreatePledgePage.jsx';
 
 import NavBar from "./components/NavBar.jsx";
 
