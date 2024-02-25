@@ -23,6 +23,7 @@ function ProjectPage() {
             <h2>{project.title}</h2>
             <h3>Created at: {project.date_created}</h3>
             <h3>{`Status: ${project.is_open}`}</h3>
+            {/* <img src={projectData.image} /> how do I add my image to the project? */}
             <h3>Pledges:</h3>
             <ul>
                 {project.pledges.map((pledgeData, key) => {
@@ -33,6 +34,8 @@ function ProjectPage() {
                     );
                 })}
             </ul>
+            {/* {<Link to={`/pledge/${project.id}`}><button>New Pledge</button></Link>} */}
+            {/* link to new pledge needs to be above but how? */}
          </div>
      );
 }
