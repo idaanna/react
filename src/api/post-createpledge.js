@@ -1,9 +1,11 @@
 async function postPledge(pledgeDetails) {
     const url = `${import.meta.env.VITE_API_URL}/pledges/`;
+    const authToken = localStorage.getItem("token");
     const response = await fetch(url, {
         method: "POST", 
         headers: {
         "Content-Type": "application/json",
+        "Authorization": `Token ${authToken}`,
         },
         body: JSON.stringify({
         "amount": pledgeDetails.amount,
