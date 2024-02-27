@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import useProject from "../hooks/use-project";
 
+import CreatePledgeForm from "../components/CreatePledgeForm";
 
+// set up authenticator here auth.userid
 
 function ProjectPage() {
     // + // Here we use a hook that comes for free in react router called `useParams`
@@ -38,10 +40,17 @@ function ProjectPage() {
                 })}
             </ul>
 
+            <>
+            <h3> Please create your pledge below </h3><CreatePledgeForm />
+            </>
+
             {/* {<Link to={`/pledge/${id}`}><button>New Pledge</button></Link>} */}
             {/* link to new pledge needs to be above but how? */}
          </div>
      );
 }
 
-export default ProjectPage;
+
+
+
+export default ProjectPage; ;

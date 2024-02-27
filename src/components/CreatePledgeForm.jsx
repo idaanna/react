@@ -7,17 +7,18 @@ import postPledge from "../api/post-createpledge";
 function CreatePledgeForm() {
     const navigate = useNavigate();
 
-    const [pledgeData, setPledgeData] = useState({
-        amount: 0,
+    const [pledge, setPledge] = useState({
+        amount: null,
         comment: "",
         is_open: true,
         date_created: new Date().toISOString(),
         project: "",
         supporter:"",
+        isAnonymous:false,
     });
     const handleChange = (event) => {
         const { id, value } = event.target;
-        setPledgeData((prevPledgeData) => ({
+        setPledge((prevPledgeData) => ({
             ...prevPledgeData,
             [id]: value,
         }));
@@ -26,19 +27,20 @@ function CreatePledgeForm() {
     const handleSubmit = (event) => {
         event.preventDefault();
         if (pledgeData.amount && pledgeData.comment) {
-            postPledge(
-                pledgeData
-            ).then((newpledge) => {
-                // Handle the response if needed
-                console.log("Pledge created successfully:", newproject);
-                // Redirect the user to the project detail page or any desired location
-                navigate(`/pledges`);
-            })
-                .catch((error) => {
-                    // Handle errors, e.g., show an error message to the user
-                    console.error("Error creating pledge:", error);
-                });
-            }}
+            // postPledge(
+            //     pledgeData
+            // ).then((newpledge) => {
+            //     // Handle the response if needed
+            //     console.log("Pledge created successfully:", newpledge);
+            //     // Redirect the user to the project detail page or any desired location
+            //     navigate(`/pledges`);
+            // })
+            //     .catch((error) => {
+            //         // Handle errors, e.g., show an error message to the user
+            //         console.error("Error creating pledge:", error);
+            //     });
+        }    
+    }
             return (
                 <form>
                     <div>
