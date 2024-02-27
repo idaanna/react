@@ -54,6 +54,10 @@ function CreateProjectForm() {
                         <label htmlFor="description"> Project Description: </label>
                         <input type="description" id="description" placeholder="Enter project description" />
                     </div>
+                    <div>
+                        <label htmlFor="image"> Image URL: </label>
+                        <input type="text" id="image" placeholder="Enter image URL" />
+                    </div>
                     <button type="submit">Create Project </button>
                 </form>
             );
