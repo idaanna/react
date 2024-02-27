@@ -7,6 +7,9 @@ function ProjectPage() {
     // + // Here we use a hook that comes for free in react router called `useParams`
     // to get the id from the URL so that we can pass it to our useProject hook.
     const { id } = useParams();
+    const params = useParams()
+    console.log(params)
+
     // + // useProject returns three pieces of info, so we need to grab them all here
     const { project, isLoading, error } = useProject(id);
     
@@ -34,7 +37,8 @@ function ProjectPage() {
                     );
                 })}
             </ul>
-            {/* {<Link to={`/pledge/${project.id}`}><button>New Pledge</button></Link>} */}
+
+            {/* {<Link to={`/pledge/${id}`}><button>New Pledge</button></Link>} */}
             {/* link to new pledge needs to be above but how? */}
          </div>
      );
