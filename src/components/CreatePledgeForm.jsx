@@ -7,7 +7,7 @@ import postPledge from "../api/post-createpledge";
 function CreatePledgeForm() {
     const navigate = useNavigate();
 
-    const [projectData, setProjectData] = useState({
+    const [pledgeData, setPledgeData] = useState({
         amount: 0,
         comment: "",
         is_open: true,
@@ -17,22 +17,22 @@ function CreatePledgeForm() {
     });
     const handleChange = (event) => {
         const { id, value } = event.target;
-        setCredentials((prevCredentials) => ({
-            ...prevCredentials,
+        setPledgeData((prevPledgeData) => ({
+            ...prevPledgeData,
             [id]: value,
         }));
     };
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        if (projectData.amount && projectData.comment) {
+        if (pledgeData.amount && pledgeData.comment) {
             postPledge(
-                projectData
+                pledgeData
             ).then((newpledge) => {
                 // Handle the response if needed
                 console.log("Pledge created successfully:", newproject);
                 // Redirect the user to the project detail page or any desired location
-                navigate(`/project/${newproject.id}`);
+                navigate(`/pledges`);
             })
                 .catch((error) => {
                     // Handle errors, e.g., show an error message to the user
@@ -42,13 +42,25 @@ function CreatePledgeForm() {
             return (
                 <form>
                     <div>
-                        <label htmlFor="amount"> Amount: </label>
-                        <input type="number" id="amount" placeholder="Enter Amount to pledge" />
+                    <label htmlFor="amount"> Insert pledge amount: </label>
+                        <input 
+                            type="number"
+                            id="amount"
+                            placeholder="Insert pledge amount"
+                            onChange={handleChange}
+                        />
                     </div>
+
                     <div>
-                        <label htmlFor="comment"> Comment: </label>
-                        <input type="comment" id="comment" placeholder="Enter pledge comment" />
+                    <label htmlFor="comment"> Insert pledge comment: </label>
+                        <input 
+                            type="text"
+                            id="comment"
+                            placeholder="Insert pledge comment"
+                            onChange={handleChange}
+                        />
                     </div>
+
                     <div>
                     <label htmlFor="is_anonymous">Anonymous</label>
                     <input
@@ -59,7 +71,9 @@ function CreatePledgeForm() {
                     />
                     </div>
 
-                    <button type="submit">Create Pledge </button>
+                    <button type="submit" onClick={handleSubmit}>
+                        Create Pledge 
+                    </button>
                 </form>
             );
 
