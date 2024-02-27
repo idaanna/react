@@ -4,14 +4,17 @@ function NavBar () {
     return (
         <div>
             <nav>
+            <ul className="menu">
                 <Link to="/"> Home  </Link>
                 <Link to="/login"> Log In  </Link>
                 <Link to="/createaccount"> Create Account  </Link>
+                <Link to="/projects"> Create Project  </Link>
+            </ul>
             </nav>
             <Outlet />
         </div>
 
-        // put header here if you want one
+        // put footer here if you want one
     );
 }
 
