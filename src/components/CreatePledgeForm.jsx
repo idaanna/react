@@ -7,22 +7,24 @@ import postPledge from "../api/post-createpledge";
 
 function CreatePledgeForm() {
     const navigate = useNavigate();
+    const userId = localStorage.getItem("userId");
     const { id } = useParams();
 
     const [pledge, setPledge] = useState({
         amount: null,
         comment: "",
-        is_Anonymous:false,
+        anonymous:false,
         // is_open: true,
         // date_created: new Date().toISOString(),
-        project: "",
-        // supporter:"",       
+        project: id,
+        supporter: userId,       
     });
     const handleChange = (event) => {
+        console.log(pledge)
         const { id, value } = event.target;
         setPledge((prevPledge) => ({
             ...prevPledge,
-            [id]: id,
+            [id]: value,
         }));
     };
 
@@ -31,15 +33,20 @@ function CreatePledgeForm() {
 
         const authToken = window.localStorage.getItem("token");
         if (authToken) {
-            postPledge(
-                pledge.amount,
-                pledge.comment,
-                // pledge.is_Anonymous,
-                authToken
-            ).then((response) => {
-                console.log(response);
-                navigate("/");
+            event.preventDefault();
+            console.log(pledge)
+            postPledge(pledge).then(response => {
+                console.log(response)
+                navigate("/")
             });
+    //             pledge.amount,
+    //             pledge.comment,
+    //             // pledge.is_Anonymous,
+    //             authToken
+    //         ).then((response) => {
+    //             console.log(response);
+    //             navigate("/");
+    //         });
         }
     };
     //     if (pledge.amount && pledge.comment) {
@@ -85,7 +92,7 @@ function CreatePledgeForm() {
                     <input
                         type="checkbox"
                         id="isAnonymous"
-                        value={pledge.is_Anonymous}
+                        value={pledge.anonymous}
                         onChange={handleChange}
                     />
                     </div>
