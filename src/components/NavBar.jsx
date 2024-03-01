@@ -1,8 +1,13 @@
 import { Link, Outlet } from "react-router-dom";
+import "./NavBar.css";
 
 function NavBar () {
     return (
-        <div>
+           <header>
+            <a href="">
+                <img src="src\images\logo.png" id="logo"/>
+               </a>
+
             <nav>
             <ul className="menu">
                 <Link to="/"> Home  </Link>
@@ -12,7 +17,8 @@ function NavBar () {
             </ul>
             </nav>
             <Outlet />
-        </div>
+            </header>
+        
 
         // put footer here if you want one
     );

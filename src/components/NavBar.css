@@ -1,0 +1,13 @@
+.menu {
+    border: 1px solid black;
+}
+
+#logo {
+    border-radius: 50%;
+    border: 1px solid red;
+}
+
+.project-card img {
+    border: 1px solid black;
+    }
+
