@@ -17,6 +17,7 @@ function LoginForm() {
                 credentials.password
             ).then((response) => {
                 window.localStorage.setItem("token", response.token);
+                window.localStorage.setItem("userId", response.user_id);
                 navigate("/");
             });
         }
