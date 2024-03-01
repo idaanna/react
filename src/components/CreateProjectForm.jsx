@@ -18,11 +18,13 @@ function CreateProjectForm() {
         image: "",
     });
     const handleChange = (event) => {
+        console.log(event)
         const { id, value } = event.target;
         setProjectData((prevprojectData) => ({
             ...prevprojectData,
             [id]: value,
         }));
+
     };
 
     const handleSubmit = (event) => {

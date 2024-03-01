@@ -1,7 +1,9 @@
 import { useParams } from "react-router-dom";
 import useProject from "../hooks/use-project";
 
+import CreatePledgeForm from "../components/CreatePledgeForm";
 
+// set up authenticator here auth.userid
 
 function ProjectPage() {
     // + // Here we use a hook that comes for free in react router called `useParams`
@@ -29,14 +31,18 @@ function ProjectPage() {
             {/* <img src={projectData.image} /> how do I add my image to the project? */}
             <h3>Pledges:</h3>
             <ul>
-                {project.pledges.map((pledgeData, key) => {
+                {project.pledges.map((pledge, key) => {
                     return (
                         <li key={key}>
-                            {pledgeData.amount} from {pledgeData.supporter}
+                            {pledge.amount} from {pledge.supporter}
                         </li>
                     );
                 })}
             </ul>
+
+            <>
+            <h3> Please create your pledge below  </h3><CreatePledgeForm />
+            </>
 
             {/* {<Link to={`/pledge/${id}`}><button>New Pledge</button></Link>} */}
             {/* link to new pledge needs to be above but how? */}
@@ -44,4 +50,7 @@ function ProjectPage() {
      );
 }
 
-export default ProjectPage;
+
+
+
+export default ProjectPage; ;
