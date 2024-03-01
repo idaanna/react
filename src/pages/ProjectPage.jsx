@@ -31,17 +31,17 @@ function ProjectPage() {
             {/* <img src={projectData.image} /> how do I add my image to the project? */}
             <h3>Pledges:</h3>
             <ul>
-                {project.pledges.map((pledgeData, key) => {
+                {project.pledges.map((pledge, key) => {
                     return (
                         <li key={key}>
-                            {pledgeData.amount} from {pledgeData.supporter}
+                            {pledge.amount} from {pledge.supporter}
                         </li>
                     );
                 })}
             </ul>
 
             <>
-            <h3> Please create your pledge below </h3><CreatePledgeForm />
+            <h3> Please create your pledge below  </h3><CreatePledgeForm />
             </>
 
             {/* {<Link to={`/pledge/${id}`}><button>New Pledge</button></Link>} */}
