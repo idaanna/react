@@ -30,7 +30,7 @@ attributes:
 - [ ] Implement suitable update/delete functionality, e.g. should a project owner be
 allowed to update a project description?
 - [ ] Implement suitable permissions, e.g. who is allowed to delete a pledge?
-- [ ] Return the relevant status codes for both successful and unsuccessful requests
+- [X] Return the relevant status codes for both successful and unsuccessful requests
 to the API.
 - [ ] Handle failed requests gracefully (e.g. you should have a custom 404 page
 rather than the default error page).
