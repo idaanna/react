@@ -16,7 +16,6 @@ function LoginForm() {
                 credentials.username,
                 credentials.password
             ).then((response) => {
-                console.log(response, 'log in response')
                 window.localStorage.setItem("token", response.token);
                 window.localStorage.setItem("userId", response.user_id);
                 navigate("/");
