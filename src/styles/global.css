@@ -9,9 +9,13 @@ html {
   main {
     max-width: 1400px;
     margin: 0 auto;
-    font-size: calc(2 * var(--base-font-size));
+    /* font-size: calc(2 * var(--base-font-size)); */
   }
   
+  body {
+    background-color: #dddab4;
+  }
+
   svg {
     display: block;
     margin: 0 auto;
@@ -70,5 +74,14 @@ html {
 
   } 
 
-
+  button {
+    font-size: 20px;
+    background-color: #a2a98a;
+    padding: 12px 28px;
+    border-radius: 12px;
+    margin: 15px;
+  }
+  button:hover {
+    background-color: #a9614e; 
+}
 
