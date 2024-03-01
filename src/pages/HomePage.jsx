@@ -11,11 +11,16 @@ function HomePage() {
     if (error) return <h1> {error.message} </h1>;
 
     return (
+        <>
+        <a href="">
+        <img src="src\images\hero.png" id="hero"/>
+        </a>
         <div id="project-list">
             {projects.map((projectData, key) => {
                 return <ProjectCard key={key} projectData={projectData} />;
             })}
         </div>
+        </>
     );
 }
 
