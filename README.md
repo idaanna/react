@@ -1,5 +1,6 @@
 # crowdfunding_front_end
 Ida Eriksson 
+https://stalwart-druid-e07575.netlify.app/
 
 - [X] Be separated into two distinct projects: an API built using the Django Rest
 Framework and a website built using React.
@@ -38,7 +39,7 @@ rather than the default error page).
 - [ ] Implement responsive design.
 
 **Submission** 
-- [ ] A link to the deployed project.
+- [X] A link to the deployed project. - https://stalwart-druid-e07575.netlify.app/
 - [ ] A screenshot of the homepage
 - [ ] A screenshot of the project creation page
 - [ ] A screenshot of the project creation form
