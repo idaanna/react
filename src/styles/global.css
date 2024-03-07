@@ -85,3 +85,42 @@ html {
     background-color: #a9614e; 
 }
 
+/* media queries */
+/* @media (min-width: 769px) {
+  header {
+  height: 70px;
+  }
+ 
+  nav {
+  float: right;
+  }
+ 
+  #hero {
+  padding: 50px;
+  height: 50vh;
+  }
+ 
+  #header-text {
+  width: 60%;
+  }
+ 
+  .column {
+  padding: 2%;
+  }
+ 
+  #columns {
+     flex-direction: row;
+  }
+
+  #column-1, #column-3 {
+  width: 33%;
+  }
+ 
+  #column-2 {
+  /* width: 34%;
+  }
+ 
+  h1 {
+  font-size: 2.5rem;
+  }
+  } */ 

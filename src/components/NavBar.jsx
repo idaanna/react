@@ -5,12 +5,9 @@ function NavBar () {
     return (
         <>
            <header>
-            <a href="">
-                <img src="\images\logo.png" id="logo"/>
-               </a>
-
-            <nav>
+            <nav className="navbar">
             <ul className="menu">
+                <Link to="/"> <img src="\images\logo.png" id="logo"/> </Link>
                 <Link to="/"> Home  </Link>
                 <Link to="/login"> Log In  </Link>
                 <Link to="/createaccount"> Create Account  </Link>
@@ -22,7 +19,7 @@ function NavBar () {
             <footer>
                 <h3>
                 <a href="https://wasr.org.au/donate/">
-                <img src="\images\seabirdrescue.jpg" id="seabirdlogo"/>
+                <img src="\images\seabirdrescue2.jpg" id="seabirdlogo"/>
                 </a>
                 Please consider donating to a real bird rescue like Western Australian Seabird Rescue who does outstanding work
                 </h3>
