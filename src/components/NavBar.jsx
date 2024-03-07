@@ -3,9 +3,10 @@ import "./NavBar.css";
 
 function NavBar () {
     return (
+        <>
            <header>
             <a href="">
-                <img src="src\images\logo.png" id="logo"/>
+                <img src="\images\logo.png" id="logo"/>
                </a>
 
             <nav>
@@ -18,9 +19,17 @@ function NavBar () {
             </nav>
             <Outlet />
             </header>
-        
+            <footer>
+                <h3>
+                <a href="https://wasr.org.au/donate/">
+                <img src="\images\seabirdrescue.jpg" id="seabirdlogo"/>
+                </a>
+                Please consider donating to a real bird rescue like Western Australian Seabird Rescue who does outstanding work
+                </h3>
+            </footer>
+        </>
 
-        // put footer here if you want one
+        
     );
 }
 

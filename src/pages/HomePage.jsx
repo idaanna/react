@@ -13,7 +13,7 @@ function HomePage() {
     return (
         <>
         <a href="">
-        <img src="src\images\hero.png" id="hero"/>
+        <img src="\images\hero.png" id="hero"/>
         </a>
         <div id="project-list">
             {projects.map((projectData, key) => {
