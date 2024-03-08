@@ -86,21 +86,17 @@ html {
 }
 
 /* media queries */
-/* @media (min-width: 769px) {
-  header {
+  @media (min-width: 769px) {
+  /* header {
   height: 70px;
   }
  
   nav {
   float: right;
-  }
+  } */
  
-  #hero {
-  padding: 50px;
-  height: 50vh;
-  }
  
-  #header-text {
+  /* #header-text {
   width: 60%;
   }
  
@@ -116,7 +112,7 @@ html {
   width: 33%;
   }
  
-  #column-2 {
+  #column-2 { */
   /* width: 34%;
   }
  
@@ -124,3 +120,4 @@ html {
   font-size: 2.5rem;
   }
   } */ 
+}

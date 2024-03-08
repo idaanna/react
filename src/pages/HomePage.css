@@ -5,3 +5,16 @@
     row-gap: 10px;
     }
     
+#hero {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (min-width: 769px) {
+
+#hero {
+    /* height: 50vh; */
+    object-fit: cover;
+    }
+
+}
