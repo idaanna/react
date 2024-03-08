@@ -12,9 +12,7 @@ function HomePage() {
 
     return (
         <>
-        <a href="">
         <img src="\images\hero.png" id="hero"/>
-        </a>
         <div id="project-list">
             {projects.map((projectData, key) => {
                 return <ProjectCard key={key} projectData={projectData} />;

@@ -6,8 +6,9 @@ function NavBar () {
         <>
            <header>
             <nav className="navbar">
-            <ul className="menu">
                 <Link to="/"> <img src="\images\logo.png" id="logo"/> </Link>
+            <ul className="menu">
+                
                 <Link to="/"> Home  </Link>
                 <Link to="/login"> Log In  </Link>
                 <Link to="/createaccount"> Create Account  </Link>
