@@ -41,7 +41,8 @@ rather than the default error page).
 **Submission** 
 - [X] A link to the deployed project. - https://stalwart-druid-e07575.netlify.app/
 - [X] A screenshot of the homepage
- ![alt text](\images\Mobile home part 1.png)
+- ![Mobile home part 1](<public/images/Mobile home part 1.png>)
+
 - [ ] A screenshot of the project creation page
 - [ ] A screenshot of the project creation form
 - [ ] A screenshot of a project with pledges
