@@ -17,13 +17,15 @@ function NavBar () {
             </nav>
             <Outlet />
             </header>
-            <footer>
+            <footer className="footer">
+                <div className="content">
                 <h3>
                 <a href="https://wasr.org.au/donate/">
                 <img src="\images\seabirdrescue2.jpg" id="seabirdlogo"/>
                 </a>
-                Please consider donating to a real bird rescue like Western Australian Seabird Rescue who does outstanding work
+                Please consider donating to a real bird rescue 
                 </h3>
+                </div>
             </footer>
         </>
 

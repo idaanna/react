@@ -8,6 +8,7 @@
 #hero {
     width: 100%;
     object-fit: cover;
+    padding-bottom: 2%;
 }
 
 @media (min-width: 769px) {

@@ -10,6 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
+    
 }
 .menu {
     display: flex;
@@ -18,9 +20,20 @@
     align-items: center;
 }
 
-/* .menu {
-    border: 1px solid black;
-} */
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
 
 #logo {
     border-radius: 50%;
@@ -34,7 +47,11 @@
 
 #seabirdlogo {
     border-radius: 50%;
-    border: 1px solid red;
+    border: 1px solid black;
+    justify-content: flex-start;
+    width: 50%;
+    margin: 10px;
+    display: inline-block;
 }
 
 .project-card img {
@@ -64,6 +81,10 @@ nav a{
     flex-direction: row;
     justify-content: space-between;
     align-items: end;
+}
+
+.navbar a {
+    font-size: 2rem;
 }
 
 }
