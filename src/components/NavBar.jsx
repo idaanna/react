@@ -23,7 +23,7 @@ function NavBar () {
                 <a href="https://wasr.org.au/donate/">
                 <img src="\images\seabirdrescue2.jpg" id="seabirdlogo"/>
                 </a>
-                Please consider donating to a real bird rescue 
+                Donate to a real bird rescue
                 </h3>
                 </div>
             </footer>
