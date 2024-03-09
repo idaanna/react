@@ -36,7 +36,7 @@ function CreateAccountForm() {
     };
 
     return (
-        <form >
+        <form className="form">
             <div>
                 <label htmlFor="email"> Insert email address: </label>
                 <input 
