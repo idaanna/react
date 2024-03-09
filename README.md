@@ -42,6 +42,11 @@ rather than the default error page).
 - [X] A link to the deployed project. - https://stalwart-druid-e07575.netlify.app/
 - [X] A screenshot of the homepage
 - ![Mobile home part 1](<public/images/Mobile home part 1.png>)
+- ![Mobile home part 2](<public/images/Mobile part 2.png>)
+- ![Mobile home part 3](<public/images/Mobile home part 3.png>)
+- ![Web home part 1](<public/images/Web part 1.png>)
+- ![Web home part 2](<public/images/Web home part 2.png>)
+- ![Web home part 3](<public/images/Web home part 3.png>)
 
 - [ ] A screenshot of the project creation page
 - [ ] A screenshot of the project creation form
