@@ -49,29 +49,6 @@ html {
     padding: 4px;
     transition: all 150ms linear;
     font-weight: 600;
-  
-    /* this might break your code */
-    /* &::after {
-      position: absolute;
-      top: 0;
-      left: 0;
-      content: "";
-      height: 100%;
-      width: 100%;
-      background-color: var(--text-color);
-      transform-origin: right;
-      transition: all 100ms linear;
-      transform: scalex(0);
-      z-index: -1;
-    }
-    &:hover,
-    &:focus {
-      color: var(--bg-color);
-      &::after {
-        transform: none;
-      }
-    }*/
-
   } 
 
   button {
@@ -85,39 +62,64 @@ html {
     background-color: #a9614e; 
 }
 
-/* media queries */
-  @media (min-width: 769px) {
-  /* header {
-  height: 70px;
-  }
- 
-  nav {
-  float: right;
-  } */
- 
- 
-  /* #header-text {
-  width: 60%;
-  }
- 
-  .column {
-  padding: 2%;
-  }
- 
-  #columns {
-     flex-direction: row;
+  #form {
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #dddab4;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    
+    label {
+      padding: 12px 12px 12px 0;
+      display: inline-block;
+    }
+    
+    input[type=submit] {
+      background-color: #dddab4;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      float: right;
+    }
+    
+    .container {
+      border-radius: 5px;
+      background-color: #dddab4;
+      padding: 20px;
+    }
+    
+    .col-25 {
+      float: left;
+      width: 25%;
+      margin-top: 6px;
+    }
+    
+    .col-75 {
+      float: left;
+      width: 75%;
+      margin-top: 6px;
+    }
+    
+    /* Clear floats after the columns */
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
   }
 
-  #column-1, #column-3 {
-  width: 33%;
+  form div {
+      border-radius: 5px;
+      background-color: #dddab4;
+      padding: 20px;
   }
- 
-  #column-2 { */
-  /* width: 34%;
-  }
- 
-  h1 {
-  font-size: 2.5rem;
-  }
-  } */ 
+
+/* media queries */
+  @media (min-width: 769px) {
+
 }
