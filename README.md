@@ -28,19 +28,20 @@ attributes:
 - [X] The supporter/user (i.e. who created the pledge)
 - [X] Whether the pledge is anonymous or not
 - [X] A comment to go along with the pledge
-- [ ] Implement suitable update/delete functionality, e.g. should a project owner be
+- [X] Implement suitable update/delete functionality, e.g. should a project owner be
 allowed to update a project description?
-- [ ] Implement suitable permissions, e.g. who is allowed to delete a pledge?
+- [X] Implement suitable permissions, e.g. who is allowed to delete a pledge?
 - [X] Return the relevant status codes for both successful and unsuccessful requests
 to the API.
-- [ ] Handle failed requests gracefully (e.g. you should have a custom 404 page
+- [X] Handle failed requests gracefully (e.g. you should have a custom 404 page
 rather than the default error page).
 - [X] Use Token Authentication.
-- [ ] Implement responsive design.
+- [X] Implement responsive design.
 
 **Submission** 
 - [X] A link to the deployed project. - https://stalwart-druid-e07575.netlify.app/
-- [ ] A screenshot of the homepage
+- [X] A screenshot of the homepage
+ ![alt text](\images\Mobile home part 1.png)
 - [ ] A screenshot of the project creation page
 - [ ] A screenshot of the project creation form
 - [ ] A screenshot of a project with pledges
