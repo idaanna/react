@@ -47,8 +47,12 @@ rather than the default error page).
 - ![Web home part 1](<public/images/Web part 1.png>)
 - ![Web home part 2](<public/images/Web home part 2.png>)
 - ![Web home part 3](<public/images/Web home part 3.png>)
+- [X] A screenshot of the project creation page
+- [X] A screenshot of the project creation form
+- ![mobile create project](<public/images/Mobile create project.png>)
+- ![web create project](<public/images/Web create project.png>)
+- [X] A screenshot of a project with pledges
+- ![mobile project with pledges](<public/images/Mobile project with pledges.png>)
+- ![web project with pledges](<public/images/Web project with pledges.png>)
 
-- [ ] A screenshot of the project creation page
-- [ ] A screenshot of the project creation form
-- [ ] A screenshot of a project with pledges
-- [ ] A screenshot of the resulting page when an unauthorized user attempts to edit a project (optional, depending on whether or not this functionality makes sense inyour app!)
+
